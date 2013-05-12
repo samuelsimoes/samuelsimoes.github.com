@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="title-header">
+	<h2 class="blog-title">{{ page.title }}</h2>
+	<p class="meta">Postado em: {{ page.date | date: '%d/%m/%Y' }}</p>
+</div>
+
+<div id="post">
+{{ content | emojify }}
+</div>
+
+<div id="share-buttons">
+  <span class='st_fblike_hcount' displayText='Facebook Like'></span>
+  <span class='st_twitter_hcount' displayText='Tweet'></span>
+  <span class='st_googleplus_hcount' displayText='Google +'></span>
+  <span class='st_email_hcount' displayText='Email'></span>
+</div>
