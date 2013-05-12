@@ -4,6 +4,7 @@ body {
 
 a {
   color: #6b6bdf;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -22,13 +23,17 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 30px;
 }
 
+
+
 .site {
   width: 60em;
 }
+
 .site .footer {
   margin-top: 0;
   border-top: 0;
 }
+
 .site .footer .contact {
   margin-top: 60px;
   float: none;
@@ -72,8 +77,27 @@ h1, h2, h3, h4, h5 {
 }
 
 .full-image {
-  margin: 20px auto;
-  max-width: 90%;
+  margin: 0 auto 1em 0;
+  max-width: 100%;
   -webkit-box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
           box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width : 900px){
+  pre {
+    overflow: auto;
+  }
+  .site {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0.9em;
+  }
+  p {
+    margin-bottom: 2.6em;
+  }
+  .blog-title {
+    line-height: 1em;
+    text-align: left;
+  }
 }
