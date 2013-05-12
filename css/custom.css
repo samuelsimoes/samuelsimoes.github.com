@@ -2,6 +2,10 @@ body {
   font-size: 0.9em;
 }
 
+p {
+  margin: 1em 0 1.6em 0;
+}
+
 a {
   color: #6b6bdf;
   text-decoration: none;
@@ -61,7 +65,9 @@ h1, h2, h3, h4, h5 {
 
 #post .highlight {
   border-radius: 5px;
+  margin-bottom: 1.5em;
 }
+
 #post pre {
   font-size: 0.9em;
   border: none;

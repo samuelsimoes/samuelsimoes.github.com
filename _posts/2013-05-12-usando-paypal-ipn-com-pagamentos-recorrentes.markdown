@@ -64,24 +64,24 @@ class PaypalController < ApplicationController
   protect_from_forgery :except => [:ipn_listener]
 
   def ipn_listener
-	notification = PayPal::Recurring::Notification.new(params)
+    notification = PayPal::Recurring::Notification.new(params)
 
-	# Se é uma notificação de pagamento recorrente
-	notification.recurring_payment?
+    # Se é uma notificação de pagamento recorrente
+    notification.recurring_payment?
 
-	# Se é uma notificação sobre a criação do profile de recorrência
-	notification.recurring_payment_profile?
+    # Se é uma notificação sobre a criação do profile de recorrência
+    notification.recurring_payment_profile?
 
-	# ID do profile
-	notification.payment_id
+    # ID do profile
+    notification.payment_id
 
-	# Status do Profile
-	notification.profile_status
+    # Status do Profile
+    notification.profile_status
 
-	# Referência previamente definida por você
-	notification.reference
+    # Referência previamente definida por você
+    notification.reference
 
-	render nothing: true
+    render nothing: true
   end
 end
 {% endhighlight %}
