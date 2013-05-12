@@ -9,7 +9,7 @@ Este é o meu meu novo blog usando o [Jekyll](http://jekyllrb.com/) via [Github 
 
 Pretendo escrever principalmente sobre minhas experiências como desenvolvedor que ainda não foram ou foram pouco documentadas e que eu acredite ser útil a outros desenvolvedores.
 
-Caso encontre algum erro, queira atualizar uma entrada, contribuir com mais informações em alguma postagem [Fork me on Github](https://github.com/samuelsimoes/samuelsimoes.github.com). :yum:
+Caso encontre algum erro, queira atualizar uma entrada, contribuir com mais informações em alguma postagem [Fork me on Github](https://github.com/samuelsimoes/samuelsimoes.github.com).
 
 É isso, valeu!
 

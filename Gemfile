@@ -1,6 +1,3 @@
 source 'http://rubygems.org'
 
-gem 'jekyll', '0.11.2'
-gem 'gemoji'
-gem 'sass'
-gem 'compass'
+gem 'jekyll', '0.12.0'
