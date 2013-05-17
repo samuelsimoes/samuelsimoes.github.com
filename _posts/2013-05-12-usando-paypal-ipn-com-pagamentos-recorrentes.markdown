@@ -3,6 +3,7 @@ layout: post
 title:  "Usando PayPal IPN com Pagamentos recorrentes"
 date:   2013-05-12 14:00
 categories: programacao
+icon: "icon-money"
 ---
 
 O PayPal IPN, para os que não sabem, é o sistema de notificação instantânea que o PayPal oferece cujo o objetivo é retornar em uma URL do seu aplicativo um request POST contendo informações referentes a alguma ação ocorrida em alguma das suas transações. Exemplo: um usuário cancela um pagamento recorrente, logo após o usuário tomar essa ação, na URL configurada anteriormente, você irá receber o POST com as informações da ação.

@@ -3,6 +3,7 @@ layout: post
 title:  "Início do Blog"
 date:   2013-05-12 08:00
 categories: aleatorio
+icon: "icon-flag-checkered"
 ---
 
 Este é o meu novo blog usando o [Jekyll](http://jekyllrb.com/) via [Github Pages](http://pages.github.com/) pois me agrada muito a ideia dos posts ficarem disponíveis via Github, permitindo contribuições, sem falar que como todo o blog é feito com arquivos estáticos, e não pretendo aplicar nenhum layout além do necessário, tudo fica muito rápido!
