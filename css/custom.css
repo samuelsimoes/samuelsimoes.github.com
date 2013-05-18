@@ -120,6 +120,29 @@ h1, h2, h3, h4, h5 {
           box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
+.github-fork {
+  margin-top: 60px;
+  position: relative;
+  padding: 26px 26px 26px 150px;
+  border-bottom: 7px solid #eff8eb;
+  background: #f6fef2;
+}
+
+.github-fork:before {
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  content: url(../images/octocat.png);
+}
+
+.github-fork a {
+  font-weight: bold;
+}
+
+.github-fork p {
+  margin: 0;
+}
+
 @media screen and (max-width : 900px){
   pre {
     overflow: auto;
