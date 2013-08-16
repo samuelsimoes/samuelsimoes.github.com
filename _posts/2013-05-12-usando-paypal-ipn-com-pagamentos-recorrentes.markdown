@@ -40,7 +40,7 @@ Infelizmente o sandbox do PayPal é bastante lento e problemático, ao clicar no
 
 **A solução nesse caso é copiar o link que fica na sidebar esquerda** (imagem acima), retirar o **beta-** da URL e acessar normalmente, exemplo:
 
-``https://www.beta-sandbox.paypal.com/cgi-bin/webscr?cmd=_profile-display-handler&tab_id=SELLER_PREFERENCES```
+```https://www.beta-sandbox.paypal.com/cgi-bin/webscr?cmd=_profile-display-handler&tab_id=SELLER_PREFERENCES```
 
 vira:
 

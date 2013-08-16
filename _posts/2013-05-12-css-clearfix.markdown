@@ -6,52 +6,6 @@ categories: html-css
 icon: "icon-cloud"
 ---
 
-<style>
-    .example-container {
-        position: relative;
-        background: rgb(247, 247, 247);
-        padding: 40px;
-        overflow: hidden;
-        margin-bottom: 30px;
-        border-radius: 5px;
-    }
-
-    .clearfix:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    .example-container:before {
-        top: 0;
-        position: absolute;
-        padding: 0 10px;
-        content: 'Resultado';
-        background: rgb(221, 221, 221);
-        font-size: 11px;
-        color: #000;
-    }
-
-    .float-container {
-        border: 3px solid gray;
-        padding: 10px;
-        background: #fff;
-    }
-
-    .float-box {
-        background: white;
-        border: 3px solid blue;
-        padding: 5px 10px;
-        box-sizing: border-box;
-    }
-
-    .float-box p {
-        margin: 0;
-        color: blue;
-        font-weight: bold;
-    }
-</style>
-
 Esse post vai para a galera que está começando com CSS e HTML e certamente passa/passou por esse problema.
 
 Antes de qualquer coisa um **clearfix** é o termo usado para definir alguma forma de corrigir o problema que é gerado quando nós temos um container que contém outros containers que flutuam, calma, eu explico. :)
