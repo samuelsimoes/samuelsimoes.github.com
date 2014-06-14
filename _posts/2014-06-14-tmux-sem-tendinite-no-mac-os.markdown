@@ -6,7 +6,7 @@ categories: aleatorio
 icon: "icon-keyboard"
 ---
 
-Fui um feliz usuário do **Tmux** por algo em torno de 8 meses, no meu dia a dia preciso lidar com vários projetos em um mesmo dia e o conceito de sessões do Tmux é matador para manter a organização do ambiente de trabalho no terminal, agrupando console, editor de código, possíveis conexões SSH e todo tipo de coisa relacionado a um projeto em um espaço. Eu realmente recomendo você conhecer o Tmux, mas não vou me ater a ele neste post.
+Fui um feliz usuário do **Tmux** por algo em torno de 8 meses, no meu dia a dia preciso lidar com vários projetos em um mesmo dia e o conceito de sessões do Tmux é matador para manter a organização do ambiente de trabalho no terminal, agrupando console, editor de código, possíveis conexões SSH e todo tipo de coisa relacionado a um projeto em um espaço. Eu realmente recomendo [você conhecer o Tmux](http://code.tutsplus.com/tutorials/intro-to-tmux--net-33889), mas não vou me ater a ele neste post.
 
 Como toda aplicação no terminal os comandos são executados a partir do teclado, os key bindings, no caso do Tmux você vai precisar executar dois comandos para quase todas as ações que você queira realizar, exemplo: trocar entre janelas/terminais, primeiro **Ctrl + b** e depois **n** ou **b**, ir para o dashboard de sessões, **Ctrl + b** e depois **s** e por aí vai.
 
