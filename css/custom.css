@@ -120,6 +120,17 @@ h1, h2, h3, h4, h5 {
           box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
+.image-container img {
+  margin-bottom: 0;
+}
+
+.image-container .legend {
+  text-align: center;
+  color: rgb(137, 135, 135);
+  font-family: Georgia;
+  font-style: italic;
+}
+
 .without-shadow {
     -webkit-box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.0);
             box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.0);
