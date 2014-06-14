@@ -41,13 +41,21 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 30px;
 }
 
-.blog-title {
+.title-container .blog-title,
+.title-container .icon {
   font-weight: 900;
   font-size: 2.5em;
+  float: left;
 }
 
-.blog-title i {
-  margin-right: 5px;
+.title-container .icon {
+  margin-right: 20px;
+}
+
+.title-container .blog-title {
+  text-align: left;
+  line-height: 40px;
+  width: 925px;
 }
 
 .site {
@@ -173,9 +181,19 @@ h1, h2, h3, h4, h5 {
   p {
     margin-bottom: 2.6em;
   }
-  .blog-title {
-    line-height: 1em;
-    text-align: left;
+  .title-header .icon {
+    margin: 0 auto 20px auto;
+    display: block;
+    float: none;
+    width: 42px;
+  }
+  .title-header .blog-title {
+    text-align: center;
+    width: auto;
+  }
+  .title-header .meta {
+    text-align: center;
+  }
   .header .title {
     font-size: 1em;
   }
