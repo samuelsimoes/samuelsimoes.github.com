@@ -1,3 +1,4 @@
 name: Samuel Simões
 pygments: true
 url: http://blog.samuelsimoes.com
+markdown: kramdown
