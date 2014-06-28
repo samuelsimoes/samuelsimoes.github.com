@@ -119,9 +119,25 @@ h1, h2, h3, h4, h5 {
   border: none;
 }
 
-.posts a {
-  font-size: 1.1em;
+.posts .post-link,
+.posts .post-date {
+  display: block;
+  text-align: center;
+}
+
+.posts .post-link {
+  font-family: "PT Serif", Cambria, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
+  font-size: 1.5em;
+}
+
+.posts li {
+  padding: 25px 0;
+  border-bottom: 1px dotted rgb(223, 223, 223);
+}
+
+#posts-list-title {
+  text-align: center;
 }
 
 #comments {
@@ -282,5 +298,12 @@ blockquote {
   }
   #github-ribbon {
     display: none;
+  }
+  .posts .post-link {
+    font-size: 1.1em;
+  }
+
+  .posts li {
+    padding: 10px 0;
   }
 }
