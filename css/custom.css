@@ -280,4 +280,7 @@ blockquote {
   .video-iframe {
     width: 100%;
   }
+  #github-ribbon {
+    display: none;
+  }
 }
