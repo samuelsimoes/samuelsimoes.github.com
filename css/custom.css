@@ -285,6 +285,7 @@ blockquote {
   }
   .title-header .blog-title {
     text-align: center;
+    font-size: 2em;
     width: 100%;
   }
   .title-header .meta {
