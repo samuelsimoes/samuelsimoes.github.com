@@ -69,20 +69,22 @@ h1, h2, h3, h4, h5 {
   width: 55em;
 }
 
-.site .footer {
+.footer {
   margin-top: 0;
   border-top: 0;
 }
 
-.site .footer .contact {
+.contact {
   margin-top: 60px;
   float: none;
+  width: 100%;
   text-align: center;
   color: #b8b8b8;
   font-family: Georgia, serif;
   font-style: italic;
 }
-.site .footer .contact a {
+
+.contact a {
   color: #b8b8b8;
   text-decoration: none;
 }
