@@ -269,7 +269,7 @@ blockquote {
   }
   .title-header .blog-title {
     text-align: center;
-    width: auto;
+    width: 100%;
   }
   .title-header .meta {
     text-align: center;
