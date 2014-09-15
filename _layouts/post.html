@@ -1,14 +1,7 @@
 ---
 layout: default
 ---
-<div class="title-header">
-  <div class="clearfix title-container">
-    <i class="{{ page.icon }} icon"></i>
-    <h2 class="blog-title">{{ page.title }}</h2>
-  </div>
-
-  <p class="meta">Postado em: {{ page.date | date: '%d/%m/%Y' }}</p>
-</div>
+<h2 class="post-title">{{ page.title }}</h2>
 
 <div id="post">
   {{ content }}

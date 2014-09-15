@@ -1,9 +1,19 @@
 body {
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+p, li {
+  line-height: 1.6em;
 }
 
 p {
-  margin: 1em 0 2em 0;
+  margin-bottom: 1.5em;
 }
 
 a {
@@ -12,8 +22,21 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "PT Serif", Cambria, Georgia, Times, "Times New Roman", serif;
-  font-size: 2.2em;
+  font-weight: normal;
+}
+
+hr {
+  margin-bottom: 35px;
+  border: 0;
+  border-top: 1px dashed #B0B0B0;
+}
+
+.posts li {
+  font-size: 1.4em;
+}
+
+#post {
+  text-align: left;
 }
 
 #post p code,
@@ -23,102 +46,74 @@ h1, h2, h3, h4, h5 {
   border-radius: 4px;
 }
 
-.header {
-  text-align: center;
-  line-height: normal;
-  font-size: normal;
-  margin-bottom: 4em;
+#post h2, h3, h4 {
+  margin-bottom: 1em;
 }
 
-.header .title a,
-.header .title a:visited {
-  color: #a00;
-  font-size: 2.5em;
+#post h2 {
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px dotted #EBEBEB;
 }
 
-.meta {
-  margin: 0;
-  margin-top: 16px;
-  font-size: 0.8em;
+#post h3 {
+  font-size: 1.5em;
 }
 
-.title-header {
-  border-bottom: 7px solid #f7f7f7;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-}
-
-.title-container .blog-title,
-.title-container .icon {
-  font-weight: 900;
-  font-size: 2.5em;
-  float: left;
-}
-
-.title-container .icon {
-  margin-right: 20px;
-}
-
-.title-container .blog-title {
-  text-align: left;
-  line-height: 40px;
-  width: 845px;
-}
-
-.site {
-  width: 55em;
-}
-
-.footer {
-  margin-top: 0;
-  border-top: 0;
-}
-
-.contact {
-  margin-top: 60px;
-  float: none;
-  width: 100%;
-  text-align: center;
-  color: #b8b8b8;
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-
-.contact a {
-  color: #b8b8b8;
-  text-decoration: none;
-}
-
-.emoji {
-  width: 25px;
-  height: 25px;
-  margin-bottom: -5px;
-}
-
-#share-buttons {
-  margin-top: 40px;
-  padding: 20px;
-  background: #fafafa;
-}
-
-#post h1,
-#post h2,
-#post h3,
-#post h4,
-#post h5,
-#post h5 {
-  font-size: 2.3em;
-  margin-bottom: 0.9em;
+#post h4 {
+  font-size: 1.2em;
 }
 
 #post .highlight {
   border-radius: 5px;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.9em;
 }
 
 #post pre {
-  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1.4em;
   border: none;
+}
+
+.site-title {
+  font-size: 5em;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+.site-title,
+.site-title a,
+.site-title a:visited {
+  text-align: center;
+  font-weight: lighter;
+  color: #a00;
+}
+
+.post-title {
+  margin-top: 0;
+  border-bottom: 7px solid #f7f7f7;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 2.2em;
+  float: left;
+  text-align: center;
+  line-height: 1em;
+  width: 100%;
+}
+
+.contact-infos {
+  margin-top: 60px;
+  float: none;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.contact-infos a {
+  color: #b8b8b8;
+  text-decoration: none;
 }
 
 .posts .post-link,
@@ -128,9 +123,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .posts .post-link {
-  font-family: "PT Serif", Cambria, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
-  font-size: 1.5em;
 }
 
 .posts li {
@@ -146,11 +139,23 @@ h1, h2, h3, h4, h5 {
   margin-top: 30px;
 }
 
+.half-image {
+  width: 60%;
+}
+
 .full-image {
-  margin: 0 auto 1em 0;
-  max-width: 100%;
+  width: 90%;
+}
+
+.image-with-shadow {
+  border: 1px solid white;
   -webkit-box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-          box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
 .image-container img {
@@ -162,11 +167,6 @@ h1, h2, h3, h4, h5 {
   color: rgb(137, 135, 135);
   font-family: Georgia;
   font-style: italic;
-}
-
-.without-shadow {
-    -webkit-box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.0);
-            box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.0);
 }
 
 .github-fork {
@@ -241,7 +241,7 @@ blockquote:before {
   content: "\F10D";
   font-family: FontAwesome;
   display: block;
-  font-size: 50px;
+  font-size: 40px;
   position: absolute;
   color: rgb(225, 225, 225);
   z-index: -1;
@@ -254,8 +254,10 @@ blockquote {
   position: relative;
   text-align: left;
   color: rgb(137, 135, 135);
+  font-weight: lighter;
   font-family: Georgia;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin-top: 1.5em;
   line-height: 1.4em;
   font-style: italic;
 }
@@ -267,34 +269,22 @@ blockquote {
 }
 
 @media screen and (max-width : 900px){
+  .post-title {
+    font-size: 1.7em;
+    line-height: 1.5em;
+  }
   pre {
     overflow: auto;
   }
-  .site {
+  .site-title {
+    font-size: 1.9em;
+    margin: 0.9em 0;
+  }
+  .wrapper {
     width: 100%;
     text-align: left;
     box-sizing: border-box;
     padding: 0.9em;
-  }
-  p {
-    margin-bottom: 2.6em;
-  }
-  .title-header .icon {
-    margin: 0 auto 20px auto;
-    display: block;
-    float: none;
-    width: 42px;
-  }
-  .title-header .blog-title {
-    text-align: center;
-    font-size: 2em;
-    width: 100%;
-  }
-  .title-header .meta {
-    text-align: center;
-  }
-  .header .title {
-    font-size: 1em;
   }
   .video-iframe {
     width: 100%;
@@ -302,11 +292,15 @@ blockquote {
   #github-ribbon {
     display: none;
   }
-  .posts .post-link {
-    font-size: 1.1em;
-  }
-
   .posts li {
+    font-size: 1.2em;
     padding: 10px 0;
+  }
+  .github-fork {
+    font-size: 0.8em;
+    padding: 18px;
+  }
+  .github-fork:before {
+    display: none;
   }
 }
