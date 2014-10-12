@@ -41,4 +41,6 @@ Other bad thing about it is the poor screen contrast, the screen don't have any 
 
 Despite the cons I'm in tottaly love for this tablet, I'm was looking for something like this for a long time. Many people advised me to buy an iPad, but the write feeling on an iPad isn't close to a real paper, even with those special stylus for iPad.
 
+For those of you who have interesting in one of this here in Brazil I bought it on [Mercado Livre](http://produto.mercadolivre.com.br/MLB-594923904-tablet-boogie-board-105-_JM) for ~R$130 (include shipping).
+
 Don't forget to see the [Improve Eletronics products catalog](http://www.myboogieboard.com/) and any questions about the Boogie Board leave in the comments below or send me a tweet ([@samuelsimoes](http://twitter.com/samuelsimoes)).
