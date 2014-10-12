@@ -16,7 +16,9 @@ Felizmente, pesquisando formas de usar o Cmd (⌘) do Mac em key bindings do Tmu
 
 Com o **Keyboard Maestro** a ideia foi escrever macros que são ativados por atalhos padronizados nas aplicações do Mac OS, como o **⌘ + Shift + \[** para aba anterior, por exemplo, que envia para o iTerm, quando em foco, um **Ctrl + b** e depois um **p**, veja a imagem  do macro:
 
-<img src="/images/keyboard-maestro.png" class="full-image without-shadow"/>
+<div class="image-container">
+  <img src="/images/keyboard-maestro.png" class="full-image"/>
+</div>
 
 O legal é que o Keyboard Maestro sobrescreve os atuais atalhos do aplicativo, o que foi particularmente útil em alguns macros que criei.
 
@@ -25,8 +27,8 @@ Dessa forma pude voltar a utilizar o Tmux no meu workflow sem problemas de estre
 Você ainda pode fazer diversas outras coisas com o Keyboard Maestro que podem melhorar muito seu workflow, como por exemplo sanar a falta da busca especializada da barra de endereços como a do Chrome no Safari:
 
 <div class="image-container">
-<img src="/images/keyboard-maestro-2.png" class="full-image without-shadow"/>
-<p class="legend">Ao digitar syou no Safari, ele insere, na barra de endereços, a URL de busca do YoutTube.</p>
+  <img src="/images/keyboard-maestro-2.png" class="full-image"/>
+  <p class="legend">Ao digitar syou no Safari, ele insere, na barra de endereços, a URL de busca do YoutTube.</p>
 </div>
 
 A parte ruim da brincadeira é que o Keyboard Maestro é pago, e bem pago, R$85. Ele tem um modo trial que ainda não encontrei quais são as limitações então você pode testar ele de boa.

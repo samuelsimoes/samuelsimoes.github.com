@@ -12,7 +12,9 @@ Para minha felicidade, recentemente conheci o plugin **[vim-ctrlspace](https://g
 
 O uso do plugin é bastante simples, tudo que você vai abrindo em uma aba vai "agregando" a um "pilha de buffers" que fica a disposição em seletor que é ativado com o atalho `Ctrl + Espaço` (usa-se `j` e `k` para navegar).
 
-<img src="/images/vim-ctrlspace.png" class="without-shadow full-image"/>
+<div class="image-container">
+  <img src="/images/vim-ctrlspace.png" class="full-image"/>
+</div>
 
 ###Atalhos mais importantes
 

@@ -82,7 +82,7 @@ var mapCornersCoords = {
 É impraticável apresentar mapas com uma massa de dados muito densa pela quantidade de marcadores na tela.
 
 <div class="image-container">
-  <img src="/images/too-many-dots.png" class="full-image"/>
+  <img src="/images/too-many-dots.png" class="image-with-shadow"/>
   <p class="legend">Ficou oh...</p>
 </div>
 
@@ -107,8 +107,8 @@ GROUP BY
 
 Para melhorar um pouco o posicionamento da referência do cluster no mapa nós podemos utilizar duas outras funções, a **[ST_Collect](http://postgis.net/docs/ST_Collect.html)** e a **[ST_Centroid](http://postgis.net/docs/ST_Centroid.html)**. A primeira vai criar uma forma geográfica com os pontos dentro da célula e a segunda vai retornar o centro da forma geográfica gerada, com isso vamos conseguir aproximar melhor o marcador da referência do cluster baseado na localização das pessoas dentro da célula. Veja a imagem para enteder melhor:
 
-<div class="image-container" style="margin-bottom: 30px;">
-  <img src="/images/postgis-grid-center.png" class="full-image without-shadow"/>
+<div class="image-container">
+  <img src="/images/postgis-grid-center.png"/>
   <p class="legend">O quadrado cinza é resultado da ST_Collect e o centro do quadrado é o resultado do ST_Centroid.</p>
 </div>
 
