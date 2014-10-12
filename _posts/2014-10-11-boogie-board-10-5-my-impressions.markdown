@@ -3,6 +3,8 @@ layout: post
 title:  "Boogie Board 10.5\": my impressions"
 date:   2014-10-11 9:00
 categories: workflow
+image: https://s3-us-west-2.amazonaws.com/samuel-blog/boogie-board-2.jpg
+description: "My first impressions about the Boogie Board 10.5', an awesome e-writer tablet!"
 ---
 
 In my daily programing tasks I spend a lot of time thinking and designing new features, either sketching routines, mockups, or just making meaningless draws to help my brain thinks more fast (it works!!) and so forth and to do this I'm was using normal sketchbooks, but the problem was that I'm quarterly buying a new sketch book and accumulating a kind of junk that I can't just throw away because of an eventually sensitive information that I can had written on these books.
