@@ -183,3 +183,7 @@ end
 In this first part we got how structure the app backbone, in the next post I'll show how clue everything in the controller layer. If you have any question ping me on [Twitter](http://twitter.com/samuelsimoes) or leave your comment below.
 
 See you soon.
+
+--- Edit ---
+
+**[Part 2 - Rails with PayPal Subscription Guide](/rails/2015/03/19/part-2-rails-with-paypal-subscription-guide.html)**
