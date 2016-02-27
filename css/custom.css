@@ -12,7 +12,7 @@ p, li {
   line-height: 1.6em;
 }
 
-p {
+p, ul, ol {
   margin-bottom: 1.5em;
 }
 
