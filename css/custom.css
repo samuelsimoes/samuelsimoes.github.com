@@ -244,15 +244,15 @@ hr {
 }
 
 blockquote:before {
-  content: "\F10D";
-  font-family: FontAwesome;
+  content: "“";
   display: block;
   font-size: 40px;
   position: absolute;
   color: rgb(225, 225, 225);
   z-index: -1;
-  top: 0;
+  top: 32px;
   left: 0;
+  font-size: 5em;
 }
 
 blockquote {
