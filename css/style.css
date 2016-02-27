@@ -3,6 +3,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.post-list-title {
+  text-align: center;
+  font-size: 1em;
+}
+
 .wrapper {
   width: 900px;
   margin: 0 auto;
@@ -31,8 +36,12 @@ hr {
   border-top: 1px dashed #B0B0B0;
 }
 
+.posts {
+  padding: 0;
+}
+
 .posts li {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #post {
@@ -67,6 +76,7 @@ hr {
 
 #post .highlight {
   border-radius: 5px;
+  margin: 0;
   margin-bottom: 1.9em;
 }
 
@@ -75,6 +85,7 @@ hr {
   line-height: 1.8em;
   border: none;
   font-size: 0.9em;
+  margin: 0;
 }
 
 .site-title {
@@ -92,6 +103,7 @@ hr {
 }
 
 .post-title-container {
+  text-align: center;
   border-bottom: 7px solid #f7f7f7;
   margin-bottom: 40px;
 }
@@ -101,7 +113,6 @@ hr {
   margin-bottom: 10px;
   font-weight: lighter;
   font-size: 2.4em;
-  text-align: center;
   width: 100%;
 }
 
@@ -127,6 +138,15 @@ hr {
 .posts .post-date {
   display: block;
   text-align: center;
+}
+
+.posts {
+  list-style: none;
+}
+
+.posts .post-date {
+  font-size: 0.6em;
+  color: gray;
 }
 
 .posts .post-link {
