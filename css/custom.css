@@ -90,17 +90,23 @@ hr {
   color: #a00;
 }
 
-.post-title {
-  margin-top: 0;
+.post-title-container {
   border-bottom: 7px solid #f7f7f7;
-  padding-bottom: 40px;
   margin-bottom: 40px;
-  font-weight: normal;
-  font-size: 2.2em;
-  float: left;
+}
+
+.post-title-container h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 2.4em;
   text-align: center;
-  line-height: 1em;
   width: 100%;
+}
+
+.post-title-container h3 {
+  font-size: 0.9em;
+  color: gray;
 }
 
 .contact-infos {

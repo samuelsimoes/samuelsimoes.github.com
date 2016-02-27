@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<h2 class="post-title">{{ page.title }}</h2>
+<div class="post-title-container">
+  <h2>{{ page.title }}</h2>
+  <h3>{{ page.date | date: '%d/%m/%Y' }}</h3>
+</div>
 
 <div id="post">
   {{ content }}
