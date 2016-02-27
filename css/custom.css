@@ -72,8 +72,9 @@ hr {
 
 #post pre {
   font-weight: lighter;
-  line-height: 1.4em;
+  line-height: 1.8em;
   border: none;
+  font-size: 0.9em;
 }
 
 .site-title {
@@ -246,7 +247,6 @@ hr {
 blockquote:before {
   content: "“";
   display: block;
-  font-size: 40px;
   position: absolute;
   color: rgb(225, 225, 225);
   z-index: -1;
