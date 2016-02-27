@@ -4,6 +4,7 @@ title:  "Facebook Flux and MVC"
 date:   2016-02-27 12:00
 categories: javascript
 ---
+
 You probably are seeing the exponential growth of [Facebook Flux](https://facebook.github.io/flux/) pattern and its derivations. The main idea of Flux pattern is the one way data flow on the app and the clearly separated concerns layers.
 
 Flux pattern defines three important layers on your app. The presentation layer that presents the app state, the store layer that hold the state itself and make the states mutations and the action creator layer that dispatches commands that are intercepted by stores through the fourth Flux's piece, the dispatcher. The diagram above show the flow:
@@ -21,14 +22,16 @@ The data flow must happen only on one way, each cycle can roughly be described l
 3. Interested stores catch the message and make the necessary states mutation.
 4. The affected stores notify the view layer to present their new state.
 
-##The good parts of Flux
+## The good parts of Flux
+
 The one way data flow is one of the best insights of Flux, if you think it's what happens on your server request lifecycle and this works pretty well, the user on printed HTML in the browser make some action (click link, submit form and so on) that triggers a request, the server processes it and returns a new HTML with the "new state" and the cycle goes on.
 
 Until recently nobody had brought it to the client side. The one way flow makes easy track how things works and happens on your app.
 
 We can't forget about the concern separation that is also another good part.
 
-##Simplifying with... MVC...
+## Simplifying with... MVC...
+
 The pointless purism on keep actions communicating with stores only through the dispatcher, besides the fact to introduces more concepts to explain to newcomers, brings other problems, mainly when the stores need interact with each other (search about `waitFor` to see this).
 
 Now, open your mind...
@@ -39,7 +42,8 @@ If you are already yelling "you got everything wrong, Flux isn't MVC", "it's hug
 
 If you still here I already have put this "pattern" on production apps that I collaborate and other open source projects (like [Chrome Basecamp Notifier](https://github.com/samuelsimoes/chrome-basecamp-notifier)) and it performs really well and of course we have a [ToDo MVC using this](https://github.com/samuelsimoes/todomvc-fluxo).
 
-###Actions
+### Actions
+
 The first difference going to be the removal of the dispatcher. Our action creator (I will call only "actions" from now on) will communicate with stores directly.
 
 To this task I like to create a class for a group of actions based on the app entities, like `PostActions`, `CommentsActions` and so on. Theses classes receive on the constructor the stores that it will manipulate, it's good because you see what "pieces of state" some "group of actions" have access.
@@ -99,7 +103,8 @@ class CartActions {
 }
 {% endhighlight %}
 
-###Stores
+### Stores
+
 The stores hold the app state and the logic to change it. The store exposes a public API with methods that make state mutations, **these methods are invoked only on action layer** because it makes predictable where we should look the state mutations commands. Yes, it resembles the model on MVC, whatever.
 
 For this part of your app you can use literal objects and some pub/sub to notifies the view about the changes. I like to use some more robust state manager with some events capabilities. For this we have created the [Fluxo](https://github.com/fluxo-js/fluxo), a tiny lib that mimics the model and collection of Backbone.js with other useful additions to our one way workflow, I will write more about using Fluxo with this, but not on this yet.
@@ -108,12 +113,14 @@ The stores, like on Facebook's Flux, notifies the view layer about the state mut
 
 You can check a complete example about the stores on the [Fluxo's ToDo MVC example store](https://github.com/samuelsimoes/todomvc-fluxo/blob/master/src/stores/todos_store.js).
 
-###View layer
+### View layer
+
 The view layer we keep like Facebook's Flux suggests, it presents the current store's state and if the user interacts with it the view invokes an action on the "actions layer".
 
 To this task you can use anything that you want. We have using React.js that we found very straightforward and performative for this task and to connect [Fluxo](https://github.com/fluxo-js/fluxo) with React we use the [Fluxo stores connector](https://github.com/fluxo-js/fluxo-react-connect-stores).
 
-##Finishing
+## Finishing
+
 Our "simplified flux" will look like this:
 
 <div class="image-container">
