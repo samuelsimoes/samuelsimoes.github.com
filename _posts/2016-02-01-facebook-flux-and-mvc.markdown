@@ -131,6 +131,6 @@ Our "simplified flux" will look like this:
 
 With this post I ain't trying to say that MVC is the best one and the Flux is worse, but it's working pretty well here with a good balance between complexity and reliability, I can check all actions on my app on a very clear layer with the visualization how the state orchestration is being done, not to mention the store's state mutation dependencies are super easy to setup and understand. The view layer is completely decoupled from this other layers and if React doesn't work anymore for our purposes we can change the view layer for any other view lib without big hassles.
 
-If you liked, have some question or still thinking that I'm crazy to break the Flux rules write comment below. I'm writing a practical and simple tutorial of this with React and Fluxo and I'll publish soon.
+If you liked, have some question or still thinking that I'm crazy to break the Flux rules write comment below. I'm writing a practical and simple tutorial of this with React and Fluxo and I'll publish soon (but you already can read the [Fluxo's  Getting Started tutorial](https://github.com/fluxo-js/fluxo/wiki/Getting-Started)).
 
 Thanks for your attention.
