@@ -6,17 +6,17 @@ categories: vim workflow
 icon: "icon-keyboard"
 ---
 
-No meu dia a dia costumo lidar com features complexas que envolvem diversos arquivos; javascript, views, models, controllers entre outras coisas mais que até o momento cada arquivo ficava na sua própria aba no Vim, criando uma mar confuso de abas.
+No meu dia a dia costumo lidar com funcionalidades que envolvem diversos arquivos de diferentes propósitos como: javascripts, views, models, controllers entre outros que até o momento cada arquivo ficava na sua própria aba no **Vim**, criando uma mar confuso de abas.
 
-Para minha felicidade, recentemente conheci o plugin **[vim-ctrlspace](https://github.com/szw/vim-ctrlspace)**, que tem a proposta muito interesse de utilizar as abas do Vim como um "espaço" para agrupar buffers, possibilitando, por exemplo, criar abas que guardam os arquivos que você está editando por tipo, como citado anteriormente. Tudo muito parecido com o que temos hoje no Tmux com as "sessions".
+Para tentar sanar esse problema recentemente encontrei o plugin **[vim-ctrlspace](https://github.com/szw/vim-ctrlspace)**, que tem a proposta muito interesse de utilizar as abas do Vim como um "grupo de buffers" (nativamente as abas e splits acessam o stack de buffers global), possibilitando, por exemplo, criar abas que agrupem os arquivos que você está editando por tipo.
 
-O uso do plugin é bastante simples, tudo que você vai abrindo em uma aba vai "agregando" a um "pilha de buffers" que fica a disposição em seletor que é ativado com o atalho `Ctrl + Espaço` (usa-se `j` e `k` para navegar).
+O uso do plugin é bastante simples. Depois de instalado tudo que você vai abrindo em uma aba entra para o stack de buffers da mesma, que fica a disposição em seletor de buffers ativado através do atalho `Ctrl + Espaço` (usa-se `k` e `j` para navegar para cima e para baixo respectivamente).
 
 <div class="image-container">
   <img src="/images/vim-ctrlspace.png" class="full-image"/>
 </div>
 
-###Atalhos mais importantes
+## Atalhos mais importantes
 
 Os atalhos a seguir devem ser executados com o seletor de buffers do plugin aberto (`Ctrl + Espaço`).
 
@@ -26,10 +26,11 @@ Os atalhos a seguir devem ser executados com o seletor de buffers do plugin aber
 * Listar diretório do arquivo selecionado: `E`
 * Transferir um buffer para a aba da esquerda: `{`
 * Transferir um buffer para a aba da direita: `}`
+* Visualizar todos os commands: `?`
 * Pré-visualizar um buffer (mostrar o buffer sem sair do seletor): `Espaço`
 
 Abaixo um vídeo do autor apresentando o plugin em detalhes:
 
 <iframe width="640" class="video-iframe" height="360" src="//www.youtube.com/embed/U1hbGJm3J0g" frameborder="0" allowfullscreen></iframe>
 
-Muito prático para organizar workflows que envolvem a edição de muitos arquivos ao mesmo tempo. :)
+Muito prático para organizar workflows que envolvem a edição de muitos arquivos que podem ser agrupados.
