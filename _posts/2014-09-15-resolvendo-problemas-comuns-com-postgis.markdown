@@ -12,7 +12,7 @@ Obs.: nos exemplos estou usando uma coluna do tipo `geography` com SRID 4326, ca
 
 `ST_GeographyFromText('SRID=4326;POINT(' || longitude || ' ' || latitude || ')')`
 
-##Pontos próximos com limites
+## Pontos próximos com limites
 > Preciso dos usuários próximos do usuário logado no raio de 100 metros.
 
 Usando a função **[ST_DWithin](http://postgis.refractions.net/docs/ST_Within.html)** conseguimos realizar esta query utilizando o raio da distância, veja:
@@ -30,7 +30,7 @@ WHERE
   );
 {% endhighlight %}
 
-##Ordernar por proximidade
+## Ordernar por proximidade
 > Quero que o meu usuário logado veja a lista de amigos ordenada pela proximidade entre eles.
 
 Usando a função **[ST_Distance](http://postgis.refractions.net/docs/ST_Distance.html)** conseguimos calcular a distância entre os pontos e com esse valor conseguimos ordenar a nossa query, veja:
@@ -47,7 +47,7 @@ ORDER BY
   ) ASC
 {% endhighlight %}
 
-##Seleção respeitando limites
+## Seleção respeitando limites
 > Quero carregar apenas os pontos na área visível do meu navegador de mapas na interface.
 
 Utilizando o operador **[&&](http://postgis.net/docs/geometry_overlaps.html)** e a função **[ST_MakeEnvelope](http://postgis.net/docs/ST_MakeEnvelope.html)** é bastante simples realizar esta query:
@@ -78,7 +78,7 @@ var mapCornersCoords = {
 };
 {% endhighlight %}
 
-##Geo clusters (agrupar pontos)
+## Geo clusters (agrupar pontos)
 É impraticável apresentar mapas com uma massa de dados muito densa pela quantidade de marcadores na tela.
 
 <div class="image-container">
@@ -129,7 +129,7 @@ GROUP BY
 
 Infelizmente o que não vamos conseguir fazer (pelo menos eu ainda não descobri como) é posicionar o ponteiro para ficar mais próximo de onde tiver mais pontos.
 
-##Concluindo
+## Concluindo
 O PostGIS é uma ferramenta fantástica para manipulação de informação espacial, porém, IMHO, sua documentação deixa muito a desejar na clareza das explicações e detalhes.
 
 Acredito que os exemplos acima sejam os casos mais comuns de uso, porém a ferramenta oferece várias outras possibilidades interessantes que valem a pena você pesquisar sobre.

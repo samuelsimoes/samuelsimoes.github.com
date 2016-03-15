@@ -6,7 +6,7 @@ categories: programacao
 icon: "icon-money"
 ---
 
-###Edit: você pode ler um guia mais completo de como criar uma estrutura de pagamentos recorrentes com Rails e PayPal **[clicando aqui!](/rails/2014/11/01/part-1-rails-with-paypal-subscription-guide.html)**
+### Edit: você pode ler um guia mais completo de como criar uma estrutura de pagamentos recorrentes com Rails e PayPal **[clicando aqui!](/rails/2014/11/01/part-1-rails-with-paypal-subscription-guide.html)**
 
 O PayPal IPN, para os que não sabem, é o sistema de notificação instantânea que o PayPal oferece cujo o objetivo é retornar em uma URL do seu aplicativo um request POST contendo informações referentes a alguma ação ocorrida em alguma das suas transações. Exemplo: um usuário cancela um pagamento recorrente, logo após o usuário tomar essa ação, na URL configurada anteriormente, você irá receber o POST com as informações da ação.
 

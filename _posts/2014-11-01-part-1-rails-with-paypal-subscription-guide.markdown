@@ -41,7 +41,7 @@ In other part of our app the user will have a page with their subscriptions info
 
 To maintain the organization of our flow we'll split the whole subscription routine in four small and specialized objects. Below I'll show these objects details involved in the process. In the next post I'll show how to wire up everything.
 
-###PaypalSubscription::DefaultOptions
+### PaypalSubscription::DefaultOptions
 For every PayPal request we need send options to identify for what subscription we are pretending make the action, for centralize the default options we'll create a very simple object, with one class method only, this object will return the options based on the subscription record on the first function argument.
 
 Note that our subscriptable entity needs respond to `id`, `paypal_payer_id`, `paypal_profile_id`, `paypal_description`, `price`. The first four properties are columns of subscriptions table, the latter two are **delegates to the associated plan entity**, remember that.
@@ -148,7 +148,7 @@ class PaypalSubscription::NotificationHandler
 end
 {% endhighlight %}
 
-###PaypalSubscription::RecurrenceCreator
+### PaypalSubscription::RecurrenceCreator
 This object will be reponsible to get the PayPal recurring payment profile id (which will delegate to our `PaypalSubscription::ResourceFacade` the profile creation on PayPal) and the payer id to save these informations on our subscription record.
 
 {% highlight ruby %}
@@ -178,7 +178,7 @@ class PaypalSubscription::RecurrenceCreator
 end
 {% endhighlight %}
 
-##In the next episodes
+## In the next episodes
 
 In this first part we got how structure the app backbone, in the next post I'll show how clue everything in the controller layer. If you have any question ping me on [Twitter](http://twitter.com/samuelsimoes) or leave your comment below.
 
