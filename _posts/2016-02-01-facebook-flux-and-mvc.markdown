@@ -6,8 +6,8 @@ categories: javascript
 ---
 
 You probably are seeing the exponential growth of [Facebook Flux](https://facebook.github.io/flux/) pattern and its derivations. The main idea of Flux pattern is the one way data flow on the app and the clearly separated concerns layers.
-
-Flux pattern defines three important layers on your app. The presentation layer that presents the app state, the store layer that hold the state itself and make the states mutations and the action creator layer that dispatches commands that are intercepted by stores through the fourth Flux's piece, the dispatcher. The diagram above show the flow:
+h
+Flux pattern defines three important layers on your app. The presentation layer that presents the app state, the store layer that holds the state itself and makes the states mutations and the action creator layer that dispatches commands that are intercepted by stores through the fourth Flux's piece, the dispatcher. The diagram above show the flow:
 
 <div class="image-container">
   <a href="https://s3-us-west-2.amazonaws.com/samuel-blog/flux-explain.png" target="_blank">
@@ -26,7 +26,7 @@ The data flow must happen only on one way, each cycle can roughly be described l
 
 The one way data flow is one of the best insights of Flux, if you think it's what happens on your server request lifecycle and this works pretty well, the user on printed HTML in the browser make some action (click link, submit form and so on) that triggers a request, the server processes it and returns a new HTML with the "new state" and the cycle goes on.
 
-Until recently nobody had brought it to the client side. The one way flow makes easy track how things works and happens on your app.
+Until recently nobody had brought it to the client side. The one way flow makes easy track how things work and happens on your app.
 
 We can't forget about the concern separation that is also another good part.
 
@@ -38,7 +38,7 @@ Now, open your mind...
 
 I like Flux, but I think it can be a little more simple and still reliable, to this we'll break some Flux rules and it will look like the MVC that you are familiar on your backend framework instead of "front-end MVC" out there.
 
-If you are already yelling "you got everything wrong, Flux isn't MVC", "it's huge backstep", "MVC is totally broke" or something like this you can stop the reading here.
+If you are already yelling "you got everything wrong, Flux isn't MVC", "it's huge backstep", "MVC is totally broken" or something like this you can stop the reading here.
 
 If you still here I already have put this "pattern" on production apps that I collaborate and other open source projects (like [Chrome Basecamp Notifier](https://github.com/samuelsimoes/chrome-basecamp-notifier)) and it performs really well and of course we have a [ToDo MVC using this](https://github.com/samuelsimoes/todomvc-fluxo).
 
@@ -80,7 +80,7 @@ This dispatchless and more straight approach brings a good benefit to understand
 
 It resembles the controller that you have on your backend MVC framework, on this layer you deal with messages to state mutations, state persistence (with the server or other persistence layer) and store hydration.
 
-A very important care is **keep your actions without complex state manipulation**, your actions must send "messages" and here I'm talking only about invoking methods on your stores, **all state mutations and side computations must happen on the store layer**.
+A very important care is **to keep your actions without complex state manipulation**, your actions must send "messages" and here I'm talking only about invoking methods on your stores, **all state mutations and side computations must happen on the store layer**.
 
 On the example below we are calculating the cart's total on the hypothetical remove product action, if other action elsewhere also removes a product this computation won't happen leading to wrong state.
 
@@ -131,6 +131,6 @@ Our "simplified flux" will look like this:
 
 With this post I ain't trying to say that MVC is the best one and the Flux is worse, but it's working pretty well here with a good balance between complexity and reliability, I can check all actions on my app on a very clear layer with the visualization how the state orchestration is being done, not to mention the store's state mutation dependencies are super easy to setup and understand. The view layer is completely decoupled from this other layers and if React doesn't work anymore for our purposes we can change the view layer for any other view lib without big hassles.
 
-If you liked, have some question or still thinking that I'm crazy to break the Flux rules write comment below. I'm writing a practical and simple tutorial of this with React and Fluxo and I'll publish soon (but you already can read the [Fluxo's  Getting Started tutorial](https://github.com/fluxo-js/fluxo/wiki/Getting-Started)).
+If you liked, have some question or still thinking that I'm crazy to break the Flux rules write a comment below. I'm writing a practical and simple tutorial of this with React and Fluxo and I'll publish soon (but you already can read the [Fluxo's  Getting Started tutorial](https://github.com/fluxo-js/fluxo/wiki/Getting-Started)).
 
 Thanks for your attention.
